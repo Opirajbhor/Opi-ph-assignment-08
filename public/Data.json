@@ -1,0 +1,128 @@
+[
+  {
+    "image": "https://vectorseek.com/wp-content/uploads/2023/07/Tik-Tok-App-Icon-Logo-Vector.svg-.png",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 1,
+    "description": "TikTok is a global video-sharing social networking service that allows users to create, share, and discover short video content. The app offers powerful video editing tools, interactive filters, music overlays, and AI-driven content recommendations. It supports trends, challenges, and a massive user-generated content community. TikTok uses algorithms to show users what they might like, ensuring strong engagement and time spent. Whether you are creating dance videos, comedy sketches, DIYs, recipe clips, or lip-syncs, TikTok simplifies the process and helps content go viral. With robust moderation tools and constant updates, it tries to balance creativity and community safety. For many users, TikTok acts as both entertainment and inspiration, turning casual creators into influencers. Its global appeal spans many languages and cultures, making it one of the fastest-growing social platforms in recent years.",
+    "size": 150,
+    "reviews": 12,
+    "ratingAvg": 4.5,
+    "downloads": 825,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 7 },
+      { "name": "5 star", "count": 80 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/previews/018/910/697/original/instagram-mobile-app-logo-instagram-app-icon-ig-app-free-free-vector.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "id": 2,
+    "description": "Instagram is a photo- and video-sharing platform where users can post images, reels and stories, follow friends, brands and creators around the world. The app offers editing tools, filters, music, and interactive stickers to customize content. It includes private messaging, IGTV, Shopping features, and live streaming. For creators, Instagram provides analytics and monetization options. The Explore tab adapts to user preferences, showing trending content. With strong visual appeal and an emphasis on aesthetics, it remains one of the top destinations for influencers, artists, and everyday users wishing to capture life. Over time, it has become a central space for discovery, brand building, and digital social interaction. The UI is polished, constantly refined, and designed to keep users engaged through notifications, content updates, and social interactions.",
+    "size": 140,
+    "reviews": 9500000,
+    "ratingAvg": 4.6,
+    "downloads": 817,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name":"2 star", "count":800000 },
+      { "name":"3 star", "count":2200000 },
+      { "name":"4 star", "count":6500000 },
+      { "name":"5 star", "count":75 }
+    ]
+  },
+  {
+    "image": "https://www.mysoftinn.com/images/features/booking-engine-page/fb-min.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "id": 3,
+    "description": "Facebook is one of the largest social networking platforms in the world. It enables users to connect with friends and family, share posts, photos, videos, join groups, and follow pages. Facebook also includes Marketplace, Events, and a variety of tools for businesses to advertise and reach audiences. The app continuously evolves its features to integrate more video content, Reels, and Stories. It uses recommendation engines to show relevant content in the News Feed and suggests connections and groups. With billions of users globally, Facebook plays a key role in social media, news dissemination, and community building. Privacy settings, data control, and user safety are part of its long-term focus, despite controversies. Many people use Facebook for staying in touch, following interests, event planning, and sharing life updates.",
+    "size": 160,
+    "reviews": 8,
+    "ratingAvg": 4.2,
+    "downloads": 598,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name":"2 star", "count":1100000 },
+      { "name":"3 star", "count":2600000 },
+      { "name":"4 star", "count":9 },
+      { "name":"5 star", "count":52 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/whatsapp-app-icon-popular-messenger-social-media-logo-vector-illustration_277909-406.jpg",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms",
+    "id": 4,
+    "description": "WhatsApp Messenger is a widely used messaging app that allows free texting, voice and video calls over internet. It offers end-to-end encryption, group chats, media sharing, voice messages, status updates, and support for sending documents, locations, contacts, and more. Many users rely on WhatsApp for everyday communication with friends, family, and for business. Groups can host many participants, voice and video calls are optimized for different network conditions, and backups ensure messages aren’t lost. Over time, features such as disappearing messages, encrypted backups, and multi-device support have increased its appeal. With a simple, clean interface and reliable performance, it’s among the top communication tools in many countries. It’s designed to consume relatively low data, work on low-end devices, and be stable across diverse networks.",
+    "size": 120,
+    "reviews": 15,
+    "ratingAvg": 4.7,
+    "downloads": 564,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name":"2 star", "count":500000 },
+      { "name":"3 star", "count":2 },
+      { "name":"4 star", "count":8 },
+      { "name":"5 star", "count":55 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/telegram-logo_1080029-100.jpg",
+    "title": "Telegram Messenger",
+    "companyName": "Telegram FZ-LLC",
+    "id": 5,
+    "description": "Telegram is a cloud-based instant messaging app known for its speed, privacy features, and support for large group chats. It allows sending of texts, voice and video messages, media, files of any type, channels for broadcasting, and end-to-end encryption options in secret chats. Telegram supports bots, large file sharing, custom themes, and is optimized across platforms. The app is popular among users who want more control over their data and who engage in community-based content or large broadcast channels. It also offers voice-chat style group calls and other modern features. Stability, fast syncing across devices, and reliability are among its selling points. Users often choose Telegram for its openness, minimal ads, and frequent updates adding new features.",
+    "size": 110,
+    "reviews": 7,
+    "ratingAvg": 4.5,
+    "downloads": 447,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name":"2 star", "count":700000 },
+      { "name":"3 star", "count":2200000 },
+      { "name":"4 star", "count":8500000 },
+      { "name":"5 star", "count":42 }
+    ]
+  },
+  {
+    "image": "https://logos-world.net/wp-content/uploads/2020/04/Snapchat-Logo-2013-2019.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 6,
+    "description": "Snapchat is a multimedia messaging app used for sending pictures and short videos (Snaps) that disappear after being viewed, alongside Stories that last 24 hours. It offers lenses with augmented reality filters, Bitmoji avatars, and a Spotlight section for user-created content. Snapchat includes chat, video calls, Discover content (news, entertainment), and features for creators. The ephemeral nature of many interactions gives Snapchat its distinct feel. It’s popular among younger audiences and known for fun visuals, frequent updates, and social interaction. Snapchat also supports maps, memories, location sharing, and in-app games. The privacy and control over who views your content are central. Many users appreciate the playful nature, constant innovation, and strong multimedia experience.",
+    "size": 130,
+    "reviews": 6,
+    "ratingAvg": 4.3,
+    "downloads": 330,
+    "ratings": [
+      { "name": "1 star", "count": 450000 },
+      { "name":"2 star", "count":800000 },
+      { "name":"3 star", "count":2500000 },
+      { "name":"4 star", "count":9 },
+      { "name":"5 star", "count":29 }
+    ]
+  },
+  {
+    "image": "https://www.clipartmax.com/png/middle/215-2155993_download-period-tracker-flo-pregnancy-ovulation-calendar-flo-period-tracker-logo.png",
+    "title": "Flo: Period & Ovulation Tracker",
+    "companyName": "Flo Health, Inc.",
+    "id": 7,
+    "description": "Flo is a women’s health app focusing on menstrual cycle tracking, ovulation, and pregnancy. It offers features like symptom tracking, fertility predictions, health insights, and reminders. It supports graphs, calendar view, educational content, pregnancy mode, and community discussions. Many users use Flo to understand menstrual symptoms, track moods, and log health metrics. The app emphasizes user privacy and secure data handling. Because of its intuitive UI and detailed information, both casual users and those planning pregnancy appreciate Flo. It also supports reminders, integration with wearables, and insights based on data trends. The educational content is curated and often medically reviewed. It’s become a popular app globally for its niche focus, helpful alerts, and engaging design.",
+    "size": 80,
+    "reviews": 4,
+    "ratingAvg": 4.6,
+    "downloads": 380,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name":"2 star", "count":400000 },
+      { "name":"3 star", "count":1500000 },
+      { "name":"4 star", "count":5 },
+      { "name":"5 star", "count":36 }
+    ]
+  }
+]

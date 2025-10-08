@@ -1,12 +1,14 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router";
 
 const Items = (
   <div className="flex items-center gap-[32px]">
-    <h1>Home</h1>
-    <h1>Apps</h1>
-    <h1>Installation</h1>
+    <Link to='/'><h1>Home</h1></Link>
+   <Link to='/Apps'>  <h1>Apps</h1></Link>
+   <Link to='/Installation'><h1>Installation</h1></Link>
+    
   </div>
 );
 const Navbar = () => {
@@ -26,7 +28,7 @@ const Navbar = () => {
         </div>
         {/* buttons */}
         <div>
-          <button className="btn  border-none bg-gradient-to-r from-violet-700 to-purple-500">
+          <button className="btn text-white border-none bg-gradient-to-r from-violet-700 to-purple-500">
             {" "}
             <FaGithub /> Contribute
           </button>
