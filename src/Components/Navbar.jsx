@@ -28,10 +28,12 @@ const Navbar = () => {
         </div>
         {/* buttons */}
         <div>
+          <Link to="https://github.com/Opirajbhor">
           <button className="btn text-white border-none bg-gradient-to-r from-violet-700 to-purple-500">
             {" "}
             <FaGithub /> Contribute
           </button>
+          </Link>
         </div>
       </div>
 
