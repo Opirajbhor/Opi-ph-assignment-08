@@ -8,6 +8,7 @@ const Appsdetails = () => {
     console.log(data)
     return (
         <div>
+            
             Apps Details Page
         </div>
     );
