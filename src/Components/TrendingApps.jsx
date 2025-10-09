@@ -14,14 +14,17 @@ const TrendingApps = ({ apiData }) => {
 
       {/* Trending Apps item */}
       <div className="lg:max-w-[1440px] text-center mx-auto my-7 ">
-        <div className="lg:grid lg:grid-cols-4 items-center lg:gap-[16px] ">
+        <div className="grid lg:grid-cols-4 grid-cols-2 justify-center items-center lg:gap-[16px] gap-[10px] ml-8">
 
         {/* -------------------------- */}
         {apiData.map((item) => (
             <AppsCard key={item.id} item={item}></AppsCard>
         ))}
         </div>
+
       </div>
+
+
        <div className="flex items-center justify-center mt-[40px] mb-[80px]">
           <Link to="/Apps">
           <button className="btn w-[145px] text-white font-bold border-none bg-gradient-to-r from-violet-700 to-purple-500">

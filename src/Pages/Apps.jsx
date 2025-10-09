@@ -11,8 +11,8 @@ const Apps = () => {
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
-      <div className="flex items-center justify-between mx-auto my-[40px]">
-        <h2 className="text-[24px] font-semibold">(132) Apps Found</h2>
+      <div className="flex flex-col gap-5 lg:flex-row items-center justify-between mx-auto my-[40px]">
+        <h2 className="lg:text-[24px] text-[16px] font-semibold">({data.length}) Apps Found</h2>
         {/* search */}
         <label className="input">
           <svg
@@ -36,9 +36,9 @@ const Apps = () => {
       </div>
 
       {/* apps */}
-      <div className="lg:grid lg:grid-cols-4 items-center justify-between lg:gap-[16px] lg:max-w-[1440px] lg:mx-auto ">
+      <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-between lg:gap-[16px] lg:max-w-[1440px] lg:mx-auto ml-8">
         {data.map((item) => (
-          <AppsCard item={item}></AppsCard>
+          <AppsCard key={item.id} item={item}></AppsCard>
         ))}
       </div>
     </div>
