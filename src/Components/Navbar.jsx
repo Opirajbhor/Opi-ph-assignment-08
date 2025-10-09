@@ -5,10 +5,16 @@ import { Link } from "react-router";
 
 const Items = (
   <div className="flex items-center gap-[32px]">
-    <Link to='/'><h1>Home</h1></Link>
-   <Link to='/Apps'>  <h1>Apps</h1></Link>
-   <Link to='/Installation'><h1>Installation</h1></Link>
-    
+    <Link to="/">
+      <h1>Home</h1>
+    </Link>
+    <Link to="/Apps">
+      {" "}
+      <h1>Apps</h1>
+    </Link>
+    <Link to="/Installation">
+      <h1>Installation</h1>
+    </Link>
   </div>
 );
 const Navbar = () => {
@@ -23,16 +29,14 @@ const Navbar = () => {
           </h1>
         </div>
         {/* items */}
-        <div className="lg:flex hidden">
-          {Items}
-        </div>
+        <div className="lg:flex hidden">{Items}</div>
         {/* buttons */}
         <div>
           <Link to="https://github.com/Opirajbhor">
-          <button className="btn text-white border-none bg-gradient-to-r from-violet-700 to-purple-500">
-            {" "}
-            <FaGithub /> Contribute
-          </button>
+            <button className="btn text-white border-none bg-gradient-to-r from-violet-700 to-purple-500">
+              {" "}
+              <FaGithub /> Contribute
+            </button>
           </Link>
         </div>
       </div>

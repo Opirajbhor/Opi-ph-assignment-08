@@ -7,6 +7,8 @@ import TrendingApps from "../Components/TrendingApps";
 
 
 const HomePage = () => {
+
+
   const[apiData, setApiData] = useState([])
 
 useEffect(()=>{
