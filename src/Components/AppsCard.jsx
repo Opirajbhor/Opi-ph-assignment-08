@@ -2,6 +2,7 @@ import React from "react";
 import { IoDownloadOutline } from "react-icons/io5";
 import { MdOutlineStarBorder } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 const AppsCard = ({ item }) => {
   const {
@@ -17,6 +18,8 @@ const AppsCard = ({ item }) => {
     ratings,
   } = item;
   return (
+    <Link to={`/Appsdetails/${id}`}>
+    
     <div className="lg:w-[348px] lg:h-auto shadow-2xl my-4 cursor-pointer">
       <img
         className="lg:w-[316px] rounded-[4px] mx-auto lg:h-[316px]"
@@ -39,6 +42,7 @@ const AppsCard = ({ item }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
