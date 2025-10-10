@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import AppsCard from "../Components/AppsCard";
 import { useLoaderData } from "react-router";
 
 const Apps = () => {
-  const data = useLoaderData();
+  const dataLoader = useLoaderData();
+  const [data, setData] = useState(dataLoader)
+
+ // search
+ const [userInput, setUserInput] = useState('')
+ const filterApp=(e)=>{
+  const userValue = e.target.value
+    setUserInput(userValue)
+   const searchApps = dataLoader.filter(app=>app.title.toLowerCase().includes(userValue.toLowerCase()))
+   setData(searchApps)
+  }
+
+
+
+
   return (
     <div className="text-center mt-[80px] lg:max-w-[1440px] lg:mx-auto">
       <h1 className="text-[48px] font-bold">Our All Applications</h1>
@@ -31,7 +45,7 @@ const Apps = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" required placeholder="Search" />
+          <input onChange={filterApp} value={userInput} type="search" required placeholder="Search" />
         </label>
       </div>
 

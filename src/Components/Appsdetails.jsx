@@ -71,6 +71,8 @@ const Appsdetails = () => {
     toast.success("Successfully Installed!");
   };
 
+
+ 
   return (
     <div className="lg:max-w-[1440px]">
       <div className="lg:max-w-[1440px]">
