@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { getStoredApp } from "../Utililties/AddtoDB";
 import { useLoaderData } from "react-router";
+import toast, { Toaster } from "react-hot-toast";
 
 const Installation = () => {
   const data = useLoaderData();
-  console.log("data", data);
   const installApps = getStoredApp();
 
-  const installedAppData = data.filter((app) => installApps.includes(app.id));
+  const installedAppArray = data.filter((app) => installApps.includes(app.id));
+
+  const [installedAppData, setInstalledAppData] = useState(installedAppArray)
+
+  // uninsall button
+  const uninsallBtn = (id)=>{
+    const updatedApps = installedAppData.filter(app=> app.id !== id)
+    setInstalledAppData(updatedApps)
+    const updatedId = updatedApps.map(app=>app.id)
+    localStorage.setItem("appList", JSON.stringify(updatedId))
+    toast.error("Uninstall Completed")
+  }
 
   return (
     <div>
       <div className="lg:max-w-[1440px] mx-auto">
         <div className="text-center mt-[80px] lg:max-w-[1440px] lg:mx-auto">
-          <h1 className="text-[48px] font-bold">Your Installed Apps</h1>
-          <p className="text-[20px] text-[#627382]">
+          <h1 className="lg:text-[48px] text-[28px] font-bold">Your Installed Apps</h1>
+          <p className="lg:text-[20px] text-[12px] text-[#627382]">
             Explore All Trending Apps on the Market developed by us
           </p>
 
@@ -29,10 +40,10 @@ const Installation = () => {
             {/* app */}
             <div className="flex items-center justify-between h-[118px] border-1 mx-4">
               {/* left side info */}
-              <div className="flex items-center justify-center gap-[20px]">
-                <img className="w-[100px]" src={app.image} alt="" />
+              <div className="flex items-center  justify-center lg:gap-[20px] gap-[10px]">
+                <img className="bg-white lg:w-[100px] w-[60px]" src={app.image} alt="" />
                 <div>
-                  <h1 className="text-[20px] text-green-500">{app.title}</h1>
+                  <h1 className="lg:text-[20px] text-[16px]text-green-500">{app.title}</h1>
                   <div className="flex gap-5">
                     {/* Donwloads */}
                     <div className="flex items-center">
@@ -62,7 +73,7 @@ const Installation = () => {
 
               {/* right side Uninstall Btn */}
               <div>
-                <button className="btn bg-[#00D390] text-white">
+                <button onClick={()=>uninsallBtn(app.id)} className="btn bg-[#00D390] text-white">
                   Uninstall
                 </button>
               </div>
@@ -71,6 +82,7 @@ const Installation = () => {
         ))}
         {/* Installed Apps */}
       </div>
+      <Toaster/>
     </div>
   );
 };

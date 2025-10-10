@@ -1,15 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router";
 import { BarChart, Bar, ResponsiveContainer } from "recharts";
 import toast, { Toaster } from "react-hot-toast";
 import { addToStoredDB } from "../Utililties/AddtoDB";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  PieChart,
+  Pie,
+  Cell,
+} from "recharts";
+
+// chart
+const dataChart = [
+  { month: "Jan", sales: 12, profit: 5 },
+  { month: "Feb", sales: 19, profit: 10 },
+  { month: "Mar", sales: 8, profit: 4 },
+  { month: "Apr", sales: 15, profit: 7 },
+  { month: "May", sales: 9, profit: 3 },
+];
 
 const Appsdetails = () => {
   const { id } = useParams();
   const currentId = parseInt(id);
   const data = useLoaderData();
 
-  // Installed item
+  // Installed apps array
   const [isInstalled, setIsInstalled] = useState([]);
 
   // data find
@@ -21,26 +42,26 @@ const Appsdetails = () => {
   const [installBTn, setInstallBtn] = useState(btnInitialText);
 
   // check if item already exist to local storage
-  const isOnLocalstorage = (id) => {
+  useEffect(() => {
     const appListLocalStorage = localStorage.getItem("appList");
-    const applistArray = JSON.parse(appListLocalStorage);
-    if (!appListLocalStorage) {
-      console.log("No app list found");
-      return false;
+    if (!appListLocalStorage || !currentId) return;
+
+    let applistArray = [];
+    try {
+      applistArray = JSON.parse(appListLocalStorage) || [];
+    } catch (err) {
+      applistArray = [];
     }
 
-    if (appListLocalStorage.includes(id)) {
+    if (applistArray.includes(currentId)) {
       setInstallBtn("Installed");
       setIsDisabled(true);
-
-      console.log(id, "found");
-      return true;
     } else {
-      return false;
+      setInstallBtn(btnInitialText);
+      setIsDisabled(false);
     }
-  };
+  }, [currentId, btnInitialText]);
 
-  // isOnLocalstorage(id);
   // install function
   const handleInstall = (id) => {
     addToStoredDB(id);
@@ -51,60 +72,62 @@ const Appsdetails = () => {
   };
 
   return (
-    <div className="mx-[80px]">
-      <div>
+    <div className="lg:max-w-[1440px]">
+      <div className="lg:max-w-[1440px]">
         {/* App Details */}
-        <div className="lg:max-w-[1440px] h-[300px] flex items-center justify-center gap-10 mt-7">
-          <div className="lg:max-w-[600px] h-[300px] flex items-center border-1 border-gray-300 rounded-2xl p-5 bg-white">
+        <div className="lg:max-w-[1440px] max-w-[300px] lg:h-[300px] h-auto mx-auto flex lg:flex-row flex-col items-center justify-center gap-10 mt-7">
+          <div className="lg:max-w-[600px] lg:h-[300px] flex items-center border-1 border-gray-300 rounded-2xl p-5 bg-white">
             <img
-              className=" w-[270px] "
+              className=" lg:w-[270px] w-[100px] "
               src={currentItem.image}
               alt={currentItem.title}
             />
           </div>
           <div className="lg:max-w-[600px]">
-            <h1 className="text-[32px] font-bold">{currentItem.title} </h1>
+            <h1 className="lg:text-[32px] text-[20px] font-bold">
+              {currentItem.title}{" "}
+            </h1>
             <p>
-              Developed by
+              Developed by{" "}
               <span className="bg-gradient-to-r from-violet-700 to-purple-500 bg-clip-text text-transparent">
                 {currentItem.companyName}
               </span>
             </p>
             {/* Interective Details */}
-            <div className="flex items-center justify-between gap-[100px] my-6">
+            <div className="flex items-center justify-between lg:gap-[100px] gap-[20px] my-6">
               {/* Donwloads */}
               <div>
                 <img
-                  className="w-[40px] h -[40px]"
+                  className="lg:w-[40px] w-[25px] "
                   src="../../assets/icon-downloads.png"
                   alt=""
                 />
                 <p className="text-[16px]">Downloads</p>
-                <h3 className="text-[40px] font-extrabold">
+                <h3 className="lg:text-[40px] text-[25px] font-extrabold">
                   {currentItem.downloads}M
                 </h3>
               </div>
               {/* Rating */}
               <div>
                 <img
-                  className="w-[40px] h -[40px]"
+                  className="lg:w-[40px] w-[25px]"
                   src="../../assets/icon-ratings.png"
                   alt=""
                 />
-                <p className="text-[16px]">Average Ratings</p>
-                <h3 className="text-[40px] font-extrabold">
+                <p className="lg:text-[16px] text-[14px]">Average Ratings</p>
+                <h3 className="lg:text-[40px] text-[25px] font-extrabold">
                   {currentItem.ratingAvg}
                 </h3>
               </div>
               {/* Reviews */}
               <div>
                 <img
-                  className="w-[40px] h-[40px]"
+                  className="lg:w-[40px] w-[25px]"
                   src="../../assets/icon-review.png"
                   alt=""
                 />
                 <p className="text-[16px]">Average Reviews</p>
-                <h3 className="text-[40px] font-extrabold">
+                <h3 className="lg:text-[40px] text-[25px] font-extrabold">
                   {currentItem.reviews}K
                 </h3>
               </div>
@@ -122,18 +145,34 @@ const Appsdetails = () => {
         </div>
 
         {/* Chart */}
-
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart width={150} height={40} data={currentItem.ratings}>
-            <Bar dataKey="uv" fill="#8884d8" />
-          </BarChart>
-        </ResponsiveContainer>
+        <div className="lg:w-[1440px] w-[250px] lg:ml-[240px]">
+          <h2 className="text-[20px] text-left p-3 ml-3 lg:text-[24px] mb-4">
+            Ratings
+          </h2>
+          {
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart
+                width={1440}
+                height={256}
+                data={currentItem.ratings}
+                layout="vertical" // <-- horizontal bars
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="name" />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="count" fill="#8884d8" />
+              </BarChart>
+            </ResponsiveContainer>
+          }
+        </div>
 
         {/* Description */}
-        <div>
+        <div className="lg:w-[1440px] lg:ml-[250px] px-4">
           <h3 className="text-[24px] font-bold mt-5">Description</h3>
-          <p className="text-[20px] my-5 text-justify">
-            {currentItem.description}
+          <p className="text-[16px] lg:text-[20px] my-5 text-justify">
+            {currentItem?.description || "No description available."}
           </p>
         </div>
       </div>
