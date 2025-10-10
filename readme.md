@@ -18,4 +18,4 @@ I built it to understand how to host a site on **Netlify** and later share it on
 ## 🚀 How to Run the Project
 1. Clone this repository from GitHub  
    ```bash
-   git clone https://github.com/yourusername/heroio-download-portal.git
+   https://github.com/Opirajbhor/Opi-ph-assignment-08.git
