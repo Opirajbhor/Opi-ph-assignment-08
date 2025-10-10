@@ -50,12 +50,15 @@ const Navbar = () => {
     <>
       <div className="text-black lg:max-w-[1440px] flex items-center justify-between p-3  mx-auto">
         {/* Logo */}
+        <Link to='/'>
         <div className="flex items-center gap-2">
           <img className="h-10" src="../../assets/logo.png" alt="Logo" />
           <h1 className="font-bold text-[16px] bg-gradient-to-r from-violet-700 to-purple-500 bg-clip-text text-transparent">
-            SOFTSTORE
+            HERO.IO
           </h1>
         </div>
+        </Link>
+        
         {/* items */}
         <div className="lg:flex hidden">{Items}</div>
         {/* buttons */}

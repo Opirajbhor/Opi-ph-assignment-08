@@ -3,6 +3,10 @@ import AppsCard from "./AppsCard";
 import { Link } from "react-router";
 
 const TrendingApps = ({ apiData }) => {
+  const popularapps = [1,2,3,4,5,6,7,8]
+  const homeAppData = apiData.filter(app=> popularapps.includes(app.id))
+  console.log("homeAppData", homeAppData)
+
   return (
     <div>
       <div className="text-center mt-6 ">
@@ -17,7 +21,7 @@ const TrendingApps = ({ apiData }) => {
         <div className="grid lg:grid-cols-4 grid-cols-2 justify-center items-center lg:gap-[16px] gap-[10px] ml-8">
 
         {/* -------------------------- */}
-        {apiData.map((item) => (
+        {homeAppData.map((item) => (
             <AppsCard key={item.id} item={item}></AppsCard>
         ))}
         </div>
