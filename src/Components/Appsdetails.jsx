@@ -2,22 +2,51 @@ import React, { useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router";
 import { BarChart, Bar, ResponsiveContainer } from "recharts";
 import toast, { Toaster } from "react-hot-toast";
+import { addToStoredDB } from "../Utililties/AddtoDB";
 
 const Appsdetails = () => {
   const { id } = useParams();
   const currentId = parseInt(id);
   const data = useLoaderData();
 
+  // Installed item
+  const [isInstalled, setIsInstalled] = useState([]);
+
   // data find
   const currentItem = data.find((item) => item.id === currentId);
 
   // install button logic
-  const [isDisabled, setIsDisabled] =useState(false)
+  const [isDisabled, setIsDisabled] = useState(false);
   let btnInitialText = `Install Now (${currentItem.size} MB)`;
   const [installBTn, setInstallBtn] = useState(btnInitialText);
-  const handleInstall = () => {
-    setInstallBtn("Installed")
-    setIsDisabled(true)
+
+  // check if item already exist to local storage
+  const isOnLocalstorage = (id) => {
+    const appListLocalStorage = localStorage.getItem("appList");
+    const applistArray = JSON.parse(appListLocalStorage);
+    if (!appListLocalStorage) {
+      console.log("No app list found");
+      return false;
+    }
+
+    if (appListLocalStorage.includes(id)) {
+      setInstallBtn("Installed");
+      setIsDisabled(true);
+
+      console.log(id, "found");
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  // isOnLocalstorage(id);
+  // install function
+  const handleInstall = (id) => {
+    addToStoredDB(id);
+    setIsInstalled(...data, currentItem);
+    setInstallBtn("Installed");
+    setIsDisabled(true);
     toast.success("Successfully Installed!");
   };
 
@@ -67,7 +96,6 @@ const Appsdetails = () => {
                   {currentItem.ratingAvg}
                 </h3>
               </div>
-
               {/* Reviews */}
               <div>
                 <img
@@ -83,8 +111,9 @@ const Appsdetails = () => {
             </div>
 
             {/* Install button */}
-            <button disabled={isDisabled}
-              onClick={handleInstall}
+            <button
+              disabled={isDisabled}
+              onClick={() => handleInstall(currentId)}
               className="bg-[#00D390] cursor-pointer text-white w-240px text-center p-[20px] rounded-[4px]"
             >
               {installBTn}

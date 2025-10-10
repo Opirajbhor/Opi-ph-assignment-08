@@ -1,128 +1,365 @@
 [
   {
-    "image": "https://vectorseek.com/wp-content/uploads/2023/07/Tik-Tok-App-Icon-Logo-Vector.svg-.png",
+    "id": 1,
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg",
+    "description": "Facebook connects people, communities, and businesses around the world. It allows users to share photos, videos, updates, and join groups while offering a robust marketplace and event system. The app supports messaging, live streaming, reels, and business tools for creators and advertisers. It is designed to keep friends and families connected while encouraging engagement through personalized feeds and smart recommendations.",
+    "size": 160,
+    "reviews": 125,
+    "ratingAvg": 4.2,
+    "downloads": "500",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 50 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "description": "Instagram is a photo and video sharing platform where people express creativity, follow interests, and connect with communities. It supports posts, stories, reels, and messaging, with strong discovery features through the Explore tab. Brands and influencers use it to reach audiences, while users enjoy a clean visual interface for sharing life moments.",
+    "size": 140,
+    "reviews": 110,
+    "ratingAvg": 4.6,
+    "downloads": "400",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 60 }
+    ]
+  },
+  {
+    "id": 3,
     "title": "TikTok",
     "companyName": "ByteDance",
-    "id": 1,
-    "description": "TikTok is a global video-sharing social networking service that allows users to create, share, and discover short video content. The app offers powerful video editing tools, interactive filters, music overlays, and AI-driven content recommendations. It supports trends, challenges, and a massive user-generated content community. TikTok uses algorithms to show users what they might like, ensuring strong engagement and time spent. Whether you are creating dance videos, comedy sketches, DIYs, recipe clips, or lip-syncs, TikTok simplifies the process and helps content go viral. With robust moderation tools and constant updates, it tries to balance creativity and community safety. For many users, TikTok acts as both entertainment and inspiration, turning casual creators into influencers. Its global appeal spans many languages and cultures, making it one of the fastest-growing social platforms in recent years.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+    "description": "TikTok is a global short-form video app for creativity and entertainment. Users make videos with music, effects, and filters, while the algorithm curates personalized feeds. It’s a hub for trends, challenges, and social creativity that blends fun and community engagement worldwide.",
     "size": 150,
-    "reviews": 12,
-    "ratingAvg": 4.5,
-    "downloads": 825,
+    "reviews": 135,
+    "ratingAvg": 4.7,
+    "downloads": "800",
     "ratings": [
-      { "name": "1 star", "count": 500000 },
-      { "name": "2 star", "count": 900000 },
-      { "name": "3 star", "count": 2500000 },
-      { "name": "4 star", "count": 7 },
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 40 },
       { "name": "5 star", "count": 80 }
     ]
   },
   {
-    "image": "https://static.vecteezy.com/system/resources/previews/018/910/697/original/instagram-mobile-app-logo-instagram-app-icon-ig-app-free-free-vector.jpg",
-    "title": "Instagram",
-    "companyName": "Meta Platforms",
-    "id": 2,
-    "description": "Instagram is a photo- and video-sharing platform where users can post images, reels and stories, follow friends, brands and creators around the world. The app offers editing tools, filters, music, and interactive stickers to customize content. It includes private messaging, IGTV, Shopping features, and live streaming. For creators, Instagram provides analytics and monetization options. The Explore tab adapts to user preferences, showing trending content. With strong visual appeal and an emphasis on aesthetics, it remains one of the top destinations for influencers, artists, and everyday users wishing to capture life. Over time, it has become a central space for discovery, brand building, and digital social interaction. The UI is polished, constantly refined, and designed to keep users engaged through notifications, content updates, and social interactions.",
-    "size": 140,
-    "reviews": 9500000,
-    "ratingAvg": 4.6,
-    "downloads": 817,
-    "ratings": [
-      { "name": "1 star", "count": 400000 },
-      { "name":"2 star", "count":800000 },
-      { "name":"3 star", "count":2200000 },
-      { "name":"4 star", "count":6500000 },
-      { "name":"5 star", "count":75 }
-    ]
-  },
-  {
-    "image": "https://www.mysoftinn.com/images/features/booking-engine-page/fb-min.png",
-    "title": "Facebook",
-    "companyName": "Meta Platforms",
-    "id": 3,
-    "description": "Facebook is one of the largest social networking platforms in the world. It enables users to connect with friends and family, share posts, photos, videos, join groups, and follow pages. Facebook also includes Marketplace, Events, and a variety of tools for businesses to advertise and reach audiences. The app continuously evolves its features to integrate more video content, Reels, and Stories. It uses recommendation engines to show relevant content in the News Feed and suggests connections and groups. With billions of users globally, Facebook plays a key role in social media, news dissemination, and community building. Privacy settings, data control, and user safety are part of its long-term focus, despite controversies. Many people use Facebook for staying in touch, following interests, event planning, and sharing life updates.",
+    "id": 4,
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/YouTube_social_white_square_%282024%29.svg",
+    "description": "YouTube is a video platform offering entertainment, learning, and creativity. Users can upload, share, and stream videos, explore Shorts, or watch live streams. It’s a space where creators connect with audiences worldwide through music, tutorials, vlogs, and more.",
     "size": 160,
-    "reviews": 8,
-    "ratingAvg": 4.2,
-    "downloads": 598,
+    "reviews": 180,
+    "ratingAvg": 4.8,
+    "downloads": "1000",
     "ratings": [
-      { "name": "1 star", "count": 600000 },
-      { "name":"2 star", "count":1100000 },
-      { "name":"3 star", "count":2600000 },
-      { "name":"4 star", "count":9 },
-      { "name":"5 star", "count":52 }
+      { "name": "1 star", "count": 7 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 90 }
     ]
   },
   {
-    "image": "https://img.freepik.com/premium-vector/whatsapp-app-icon-popular-messenger-social-media-logo-vector-illustration_277909-406.jpg",
+    "id": 5,
     "title": "WhatsApp Messenger",
     "companyName": "Meta Platforms",
-    "id": 4,
-    "description": "WhatsApp Messenger is a widely used messaging app that allows free texting, voice and video calls over internet. It offers end-to-end encryption, group chats, media sharing, voice messages, status updates, and support for sending documents, locations, contacts, and more. Many users rely on WhatsApp for everyday communication with friends, family, and for business. Groups can host many participants, voice and video calls are optimized for different network conditions, and backups ensure messages aren’t lost. Over time, features such as disappearing messages, encrypted backups, and multi-device support have increased its appeal. With a simple, clean interface and reliable performance, it’s among the top communication tools in many countries. It’s designed to consume relatively low data, work on low-end devices, and be stable across diverse networks.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "description": "WhatsApp is a secure and fast messaging app used by billions worldwide. It supports texts, calls, voice notes, file sharing, and group chats with end-to-end encryption. Its simplicity and privacy make it one of the most trusted communication tools.",
     "size": 120,
-    "reviews": 15,
+    "reviews": 155,
     "ratingAvg": 4.7,
-    "downloads": 564,
+    "downloads": "600",
     "ratings": [
-      { "name": "1 star", "count": 300000 },
-      { "name":"2 star", "count":500000 },
-      { "name":"3 star", "count":2 },
-      { "name":"4 star", "count":8 },
-      { "name":"5 star", "count":55 }
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 60 }
     ]
   },
   {
-    "image": "https://img.freepik.com/premium-photo/telegram-logo_1080029-100.jpg",
-    "title": "Telegram Messenger",
+    "id": 6,
+    "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
-    "id": 5,
-    "description": "Telegram is a cloud-based instant messaging app known for its speed, privacy features, and support for large group chats. It allows sending of texts, voice and video messages, media, files of any type, channels for broadcasting, and end-to-end encryption options in secret chats. Telegram supports bots, large file sharing, custom themes, and is optimized across platforms. The app is popular among users who want more control over their data and who engage in community-based content or large broadcast channels. It also offers voice-chat style group calls and other modern features. Stability, fast syncing across devices, and reliability are among its selling points. Users often choose Telegram for its openness, minimal ads, and frequent updates adding new features.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+    "description": "Telegram is a cloud-based messaging app known for speed, privacy, and versatility. It supports chats, groups, channels, bots, and large file sharing. Its multi-device sync and open API attract both casual users and developers.",
     "size": 110,
-    "reviews": 7,
+    "reviews": 95,
     "ratingAvg": 4.5,
-    "downloads": 447,
+    "downloads": "400",
     "ratings": [
-      { "name": "1 star", "count": 400000 },
-      { "name":"2 star", "count":700000 },
-      { "name":"3 star", "count":2200000 },
-      { "name":"4 star", "count":8500000 },
-      { "name":"5 star", "count":42 }
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 9 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 50 }
     ]
   },
   {
-    "image": "https://logos-world.net/wp-content/uploads/2020/04/Snapchat-Logo-2013-2019.png",
+    "id": 7,
+    "title": "Messenger",
+    "companyName": "Meta Platforms",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Facebook_Messenger_logo_2025.svg/1200px-Facebook_Messenger_logo_2025.svg.png",
+    "description": "Messenger connects friends and businesses through instant text, audio, and video communication. It supports stickers, reactions, chat themes, and encrypted messages, integrating seamlessly with Instagram and Facebook.",
+    "size": 140,
+    "reviews": 110,
+    "ratingAvg": 4.4,
+    "downloads": "500",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 70 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg",
+    "description": "LinkedIn helps professionals network, find jobs, and share insights. It supports connections, job applications, posts, messaging, and learning resources. It’s essential for career development and business networking.",
+    "size": 130,
+    "reviews": 85,
+    "ratingAvg": 4.2,
+    "downloads": "300",
+    "ratings": [
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 40 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png",
+    "description": "Pinterest is a visual discovery app for ideas, inspiration, and creativity. Users save pins, create boards, and explore visuals from recipes to fashion. It’s used for planning, inspiration, and trend discovery.",
+    "size": 120,
+    "reviews": 75,
+    "ratingAvg": 4.5,
+    "downloads": "200",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 45 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg",
+    "description": "Spotify is a music and podcast streaming app offering millions of songs, playlists, and recommendations. Users can download, stream, and share music while discovering artists through personalized playlists.",
+    "size": 130,
+    "reviews": 150,
+    "ratingAvg": 4.8,
+    "downloads": "500",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 75 }
+    ]
+  },
+  
+  {
+    "id": 11,
     "title": "Snapchat",
     "companyName": "Snap Inc.",
-    "id": 6,
-    "description": "Snapchat is a multimedia messaging app used for sending pictures and short videos (Snaps) that disappear after being viewed, alongside Stories that last 24 hours. It offers lenses with augmented reality filters, Bitmoji avatars, and a Spotlight section for user-created content. Snapchat includes chat, video calls, Discover content (news, entertainment), and features for creators. The ephemeral nature of many interactions gives Snapchat its distinct feel. It’s popular among younger audiences and known for fun visuals, frequent updates, and social interaction. Snapchat also supports maps, memories, location sharing, and in-app games. The privacy and control over who views your content are central. Many users appreciate the playful nature, constant innovation, and strong multimedia experience.",
-    "size": 130,
-    "reviews": 6,
+    "image": "https://upload.wikimedia.org/wikipedia/fr/7/75/Snapchat.png",
+    "description": "Snapchat is a multimedia messaging app that emphasizes fun, spontaneity, and privacy. Users share photos, short videos, and stories that disappear after viewing. With Snap Map, AR filters, Bitmojis, and Spotlight, it’s a creative social hub for friends and creators worldwide. The app’s ephemeral content encourages real moments, making communication casual and interactive.",
+    "size": 120,
+    "reviews": 135,
     "ratingAvg": 4.3,
-    "downloads": 330,
+    "downloads": "400",
     "ratings": [
-      { "name": "1 star", "count": 450000 },
-      { "name":"2 star", "count":800000 },
-      { "name":"3 star", "count":2500000 },
-      { "name":"4 star", "count":9 },
-      { "name":"5 star", "count":29 }
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 60 }
     ]
   },
   {
-    "image": "https://www.clipartmax.com/png/middle/215-2155993_download-period-tracker-flo-pregnancy-ovulation-calendar-flo-period-tracker-logo.png",
-    "title": "Flo: Period & Ovulation Tracker",
-    "companyName": "Flo Health, Inc.",
-    "id": 7,
-    "description": "Flo is a women’s health app focusing on menstrual cycle tracking, ovulation, and pregnancy. It offers features like symptom tracking, fertility predictions, health insights, and reminders. It supports graphs, calendar view, educational content, pregnancy mode, and community discussions. Many users use Flo to understand menstrual symptoms, track moods, and log health metrics. The app emphasizes user privacy and secure data handling. Because of its intuitive UI and detailed information, both casual users and those planning pregnancy appreciate Flo. It also supports reminders, integration with wearables, and insights based on data trends. The educational content is curated and often medically reviewed. It’s become a popular app globally for its niche focus, helpful alerts, and engaging design.",
-    "size": 80,
-    "reviews": 4,
-    "ratingAvg": 4.6,
-    "downloads": 380,
+    "id": 12,
+    "title": "Twitter (X)",
+    "companyName": "X Corp.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/1024px-X_logo.jpg",
+    "description": "Twitter, now known as X, is a real-time social platform for news, discussions, and trends. Users share short posts, images, and videos while engaging in global conversations. The platform supports Spaces for live audio, Communities for niche interests, and monetization for creators. It’s a space where opinions shape culture and news spreads fast.",
+    "size": 130,
+    "reviews": 145,
+    "ratingAvg": 4.1,
+    "downloads": "500",
     "ratings": [
-      { "name": "1 star", "count": 200000 },
-      { "name":"2 star", "count":400000 },
-      { "name":"3 star", "count":1500000 },
-      { "name":"4 star", "count":5 },
-      { "name":"5 star", "count":36 }
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 18 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 55 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Reddit_Logo_Icon.svg/250px-Reddit_Logo_Icon.svg.png",
+    "description": "Reddit is a community-based discussion platform where users explore topics, share ideas, and engage in forums called subreddits. Covering everything from news and science to memes and art, Reddit promotes open conversation. Users vote content up or down, creating a democratic space for trending ideas and viral discussions.",
+    "size": 110,
+    "reviews": 90,
+    "ratingAvg": 4.5,
+    "downloads": "300",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 18 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 45 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "image": "https://i.namu.wiki/i/1Hiv-mf3x_xkYU1kd6PRSAA9TZycl-A3h-HM--kersQF5fL6_fF2PmO8757fj9CqhXnmcy2lFaQkwToWTxtIHw.webp",
+    "description": "Discord is a communication platform built for communities, gamers, and groups. It supports text, voice, and video chats through servers and channels. With powerful moderation tools, custom emojis, and bots, Discord fosters strong online communities for gaming, education, and collaboration.",
+    "size": 160,
+    "reviews": 110,
+    "ratingAvg": 4.6,
+    "downloads": "300",
+    "ratings": [
+      { "name": "1 star", "count": 9 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 55 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Spotify for Artists",
+    "companyName": "Spotify Ltd.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/250px-Spotify_App_Logo.svg.png",
+    "description": "Spotify for Artists helps musicians manage their presence on Spotify. It provides real-time insights, audience data, and tools to customize artist profiles. Musicians can track streams, playlist adds, and listener locations, enabling strategic releases and engagement with fans.",
+    "size": 100,
+    "reviews": 75,
+    "ratingAvg": 4.7,
+    "downloads": "200",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 47 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "description": "Amazon Shopping is the world’s largest online marketplace app. It enables users to browse millions of products, compare prices, read reviews, and order with one tap. Integrated with Prime services, it offers fast delivery, live order tracking, and exclusive deals worldwide.",
+    "size": 170,
+    "reviews": 190,
+    "ratingAvg": 4.6,
+    "downloads": "900",
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 45 },
+      { "name": "5 star", "count": 83 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
+    "description": "Netflix is a streaming platform offering a vast library of TV shows, movies, documentaries, and originals. It provides personalized recommendations, offline downloads, and multi-device streaming. With global availability and a sleek interface, it revolutionized entertainment accessibility.",
+    "size": 180,
+    "reviews": 165,
+    "ratingAvg": 4.5,
+    "downloads": "700",
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 25 },
+      { "name": "4 star", "count": 40 },
+      { "name": "5 star", "count": 75 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/2275px-Google_Maps_Logo_2020.svg.png",
+    "description": "Google Maps offers navigation, real-time traffic updates, and location discovery. It supports offline maps, directions, and business reviews. From driving routes to public transport and Street View, it’s a must-have for travelers and commuters alike.",
+    "size": 150,
+    "reviews": 145,
+    "ratingAvg": 4.7,
+    "downloads": "1000",
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 85 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "CapCut",
+    "companyName": "Bytedance Pte. Ltd.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Capcut-logo.svg/1280px-Capcut-logo.svg.png",
+    "description": "CapCut is a video editing app that empowers creators with professional tools. It offers transitions, filters, keyframe animation, and AI effects. Popular among influencers and editors, it simplifies video creation for TikTok, YouTube, and Instagram content.",
+    "size": 130,
+    "reviews": 115,
+    "ratingAvg": 4.6,
+    "downloads": "400",
+    "ratings": [
+      { "name": "1 star", "count": 6 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 18 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 70 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Canva_Logo.svg/1200px-Canva_Logo.svg.png",
+    "description": "Canva is a graphic design app that simplifies content creation. It offers templates for social media posts, presentations, and videos. With drag-and-drop tools, AI image generation, and brand kits, it’s perfect for professionals and beginners alike.",
+    "size": 160,
+    "reviews": 130,
+    "ratingAvg": 4.8,
+    "downloads": "300",
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 18 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 75 }
     ]
   }
+
+
 ]
