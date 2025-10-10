@@ -1,20 +1,48 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Items = (
   <div className="flex items-center gap-[32px]">
-    <Link to="/">
-      <h1>Home</h1>
-    </Link>
-    <Link to="/Apps">
-      {" "}
-      <h1>Apps</h1>
-    </Link>
-    <Link to="/Installation">
-      <h1>Installation</h1>
-    </Link>
+    <NavLink
+      to="/"
+      className={({ isActive }) =>
+        `text-lg font-medium ${
+          isActive
+            ? "border-b-2 border-purple-500 bg-gradient-to-r from-violet-700 to-purple-500 bg-clip-text text-transparent"
+            : "text-gray-700"
+        }`
+      }
+    >
+      Home
+    </NavLink>
+
+    <NavLink
+      to="/Apps"
+      className={({ isActive }) =>
+        `text-lg font-medium ${
+          isActive
+            ? "border-b-2 border-purple-500 bg-gradient-to-r from-violet-700 to-purple-500 bg-clip-text text-transparent"
+            : "text-gray-700"
+        }`
+      }
+    >
+      Apps
+    </NavLink>
+
+    <NavLink
+      to="/Installation"
+      className={({ isActive }) =>
+        `text-lg font-medium ${
+          isActive
+            ? "border-b-2 border-purple-500 bg-gradient-to-r from-violet-700 to-purple-500 bg-clip-text text-transparent"
+            : "text-gray-700"
+        }`
+      }
+    >
+      Installation
+    </NavLink>
   </div>
 );
 const Navbar = () => {

@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router";
 import { BarChart, Bar, ResponsiveContainer } from "recharts";
+import toast, { Toaster } from "react-hot-toast";
 
 const Appsdetails = () => {
   const { id } = useParams();
   const currentId = parseInt(id);
   const data = useLoaderData();
 
+  // data find
   const currentItem = data.find((item) => item.id === currentId);
-  console.log(currentItem.ratings);
+
+  // install button logic
+  const [isDisabled, setIsDisabled] =useState(false)
+  let btnInitialText = `Install Now (${currentItem.size} MB)`;
+  const [installBTn, setInstallBtn] = useState(btnInitialText);
+  const handleInstall = () => {
+    setInstallBtn("Installed")
+    setIsDisabled(true)
+    toast.success("Successfully Installed!");
+  };
 
   return (
     <div className="mx-[80px]">
@@ -72,20 +83,22 @@ const Appsdetails = () => {
             </div>
 
             {/* Install button */}
-            <button className="bg-[#00D390] cursor-pointer text-white w-240px text-center p-[20px] rounded-[4px]">
-              Install Now <span>{currentItem.size}MB</span>
+            <button disabled={isDisabled}
+              onClick={handleInstall}
+              className="bg-[#00D390] cursor-pointer text-white w-240px text-center p-[20px] rounded-[4px]"
+            >
+              {installBTn}
             </button>
           </div>
         </div>
 
         {/* Chart */}
-        
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart width={150} height={40} data={currentItem.ratings}>
-              <Bar dataKey="uv" fill="#8884d8" />
-            </BarChart>
-          </ResponsiveContainer>
-        
+
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart width={150} height={40} data={currentItem.ratings}>
+            <Bar dataKey="uv" fill="#8884d8" />
+          </BarChart>
+        </ResponsiveContainer>
 
         {/* Description */}
         <div>
@@ -95,6 +108,7 @@ const Appsdetails = () => {
           </p>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
