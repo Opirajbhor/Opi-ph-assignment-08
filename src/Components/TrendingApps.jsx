@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const TrendingApps = ({ apiData }) => {
   const popularapps = [1,2,3,4,5,6,7,8]
   const homeAppData = apiData.filter(app=> popularapps.includes(app.id))
-  console.log("homeAppData", homeAppData)
+  // console.log("homeAppData", homeAppData)
 
   return (
     <div>

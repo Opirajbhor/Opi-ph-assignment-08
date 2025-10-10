@@ -70,9 +70,9 @@ const Installation = () => {
           </div>
         </div>
         {installedAppData.map((app) => (
-          <div>
+          <div className="shadow-2xs border-1 border-gray-300 rounded-[8px] mb-3">
             {/* app */}
-            <div className="flex items-center justify-between h-[118px] border-1 mx-4">
+            <div className="flex items-center justify-between h-[118px]  mx-4">
               {/* left side info */}
               <div className="flex items-center  justify-center lg:gap-[20px] gap-[10px]">
                 <img

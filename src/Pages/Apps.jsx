@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AppsCard from "../Components/AppsCard";
-import { Link, useLoaderData } from "react-router";
+import { Link, useLoaderData, useNavigation } from "react-router";
+import LoadingState from "../Components/LoadingState";
 
 const Apps = () => {
   const dataLoader = useLoaderData();
@@ -8,13 +9,21 @@ const Apps = () => {
 
   // search
   const [userInput, setUserInput] = useState("");
+  const [isSearching, setIsSearching] = useState(false)
   const filterApp = (e) => {
+
+    // if(searchLoading.state === "loading") return <h1>loading....</h1>
     const userValue = e.target.value;
     setUserInput(userValue);
-    const searchApps = dataLoader.filter((app) =>
-      app.title.toLowerCase().includes(userValue.toLowerCase())
+    setIsSearching(true)
+    setTimeout(()=>{
+
+      const searchApps = dataLoader.filter((app) =>
+        app.title.toLowerCase().includes(userValue.toLowerCase())
     );
     setData(searchApps);
+    setIsSearching(false)
+  },500)
   };
 
   let checkData;
@@ -81,9 +90,19 @@ const Apps = () => {
         </div>
 
         {/* apps */}
-        <div >
+        {
+          isSearching?(
+            <div>
+              <LoadingState></LoadingState>
+            </div>
+          ):(
+
+            <div >
           {checkData}
         </div>
+          )
+        }
+        
       </div>
     );
 };

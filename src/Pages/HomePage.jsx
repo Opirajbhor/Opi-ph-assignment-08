@@ -20,7 +20,7 @@ useEffect(()=>{
 
 
   return (
-    <div>
+    <div >
 
       {/* -------------Hero-------------- */}
       <div className="lg:max-w-[1170px] mx-auto">
